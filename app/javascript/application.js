@@ -1,5 +1,11 @@
 // Entry point for the build script in your package.json
-import "@hotwired/turbo-rails"
-import "./controllers"
-import "trix"
-import "@rails/actiontext"
+import "@hotwired/turbo-rails";
+import "trix";
+import "@rails/actiontext";
+import Alpine from "alpinejs";
+
+import "./controllers";
+
+window.Alpine = Alpine;
+
+Alpine.start();

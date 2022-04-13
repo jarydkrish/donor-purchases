@@ -5,6 +5,8 @@ class CarePackage < ApplicationRecord
   has_many :order_items, dependent: :nullify
   has_many :orders, through: :order_items
 
+  has_many_attached :images
+
   def update_price
     price = 0
     care_package_products.each do |care_package_product|
