@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @care_package %>
+
+<div>
+  <%= link_to "Edit this care package", edit_care_package_path(@care_package) %> |
+  <%= link_to "Back to care packages", care_packages_path %>
+
+  <%= button_to "Destroy this care package", @care_package, method: :delete %>
+</div>

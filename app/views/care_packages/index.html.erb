@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Care packages</h1>
+
+<div id="care_packages">
+  <% @care_packages.each do |care_package| %>
+    <%= render care_package %>
+    <p>
+      <%= link_to "Show this care package", care_package %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New care package", new_care_package_path %>
